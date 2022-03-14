@@ -1,0 +1,39 @@
+/*nav{
+    ;
+}*/
+body{
+    background-color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    background-color: rgb(240, 6, 248);
+    border-radius: 10px;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+nav table tr td a div.roundB{
+    background-color: bisque;
+}
+#cercle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+}
+.roundB{
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 10rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cent{
+    margin-left: auto;
+    margin-right: auto;
+}
