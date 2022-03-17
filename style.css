@@ -1,39 +1,141 @@
 /*nav{
     ;
 }*/
-body{
-    background-color: blueviolet;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-footer{
-    background-color: rgb(240, 6, 248);
-    border-radius: 10px;
-    text-align: center;
 
-}
-a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-}
-nav table tr td a div.roundB{
-    background-color: bisque;
-}
-#cercle{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 5rem;
-}
-.roundB{
-    border-radius: 10px;
-    background-color: aliceblue;
-    width: 10rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  background-image: url("img/bck.png");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cent{
-    margin-left: auto;
-    margin-right: auto;
+footer {
+  background-color: rgb(240, 6, 248);
+  border-radius: 10px;
+  text-align: center;
+}
+
+@keyframes growing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100px;
+  }
+}
+
+.growA {
+  animation-duration: 1.5s;
+  animation-name: growing;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideleft {
+  from {
+    margin-left: 1000%;
+    visibility: hidden;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slideLA1 {
+  animation-duration: 0.5s;
+  animation-name: slideleft;
+  animation-iteration-count: 1;
+}
+
+.slideLA2 {
+  animation-duration: 1s;
+  animation-name: slideleft;
+  animation-iteration-count: 1;
+}
+
+.slideLA3 {
+  animation-duration: 1.5s;
+  animation-name: slideleft;
+  animation-iteration-count: 1;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+nav table tr td a div.roundB {
+  background-color: bisque;
+}
+#cercle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+}
+.roundB {
+  border-radius: 10px;
+  background-color: aliceblue;
+  width: 10rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes pkbrotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pkball {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-duration: 5s;
+  -webkit-animation: pkbrotate 10s infinite linear;
+}
+
+@keyframes spG0G {
+  from {
+    transform: rotate(0deg);
+    margin-left: 100%;
+    visibility: visible;
+  }
+
+  to {
+    transform: rotate(360deg);
+    margin-left: -100%;
+  }
+}
+
+.spG {
+  position: absolute;
+  animation-name: spG0G;
+  animation-duration: 20s;
+  width: 10rem;
+  animation-iteration-count: 1;
+  visibility: hidden;
+}
+
+.cent {
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: large;
+}
+.ic {
+  width: 100px;
+}
+
+/*typo fnaf*/
+.neonText {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 0 0 7px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0),
+    0 0 21px rgb(255, 0, 0), 0 0 42px rgb(255, 0, 0), 0 0 82px rgb(0, 0, 0),
+    0 0 92px rgb(255, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 0, 0);
 }
